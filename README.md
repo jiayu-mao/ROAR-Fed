@@ -24,7 +24,7 @@ Another baseline used in our paper already has an official public implementation
 
 * **RIS-FL**: [https://github.com/liuhang1994/RIS-FL](https://github.com/liuhang1994/RIS-FL)
 
-In our experiments, all baseline methods were evaluated under the same experimental settings as our proposed method whenever applicable.
+In our experiments, all baseline methods were evaluated under the same experimental settings as our proposed method for fair comparison.
 
 ## Note on the public release
 
@@ -84,67 +84,37 @@ First move into the code directory:
 cd ROAR-Fed-github
 ```
 
-We provide shell scripts in the `scripts/` folder to reproduce the main experiment settings used in the paper.
+We provide shell scripts in the `ROAR-Fed-github/scripts/` folder to reproduce the main experiment settings used in the paper.
+
+### Main MNIST experiments
+
+```bash
+bash scripts/run_mnist_main.sh
+```
+
+### MNIST experiments with different RIS element settings
+
+```bash
+bash scripts/run_mnist_L.sh
+```
+
+### Fashion-MNIST experiments with different Dirichlet beta values (`downlink = 2`)
+
+```bash
+bash scripts/run_fmnist_noisydl.sh
+```
+
+### Fashion-MNIST experiments with different Dirichlet beta values (`downlink = 0`)
+
+```bash
+bash scripts/run_fmnist_errorfreedl.sh
+```
 
 ### Main CIFAR-10 experiments
 
 ```bash
 bash scripts/run_cifar10.sh
 ```
-
-### MNIST experiments with different RIS element settings
-
-```bash
-bash scripts/run_L_sweep.sh
-```
-
-### Fashion-MNIST experiments with different Dirichlet beta values (`downlink = 2`)
-
-```bash
-bash scripts/run_fmnist_beta.sh
-```
-
-### Fashion-MNIST experiments with different Dirichlet beta values (`downlink = 0`)
-
-```bash
-bash scripts/run_fmnist_beta_downlink0.sh
-```
-
-## Main experimental settings
-
-A representative configuration for the main CIFAR-10 experiments is as follows:
-
-```text
---rounds=500
---SNR=20
---cs_sigma_hat=0.1
---csi=0
---phase_design=sca
---algorithm=AOAFL
---iid=0
---L=128
---local_alg=AOAFL
---s_beta=100
---client_scale=yes
---show=1
---M=10
---total_clients=10
---RIS_num=1
---b=512
---downlink=0
---SNR_dl=30
---dataset=cifar10
---model=cnn_cifar10
---lr=0.1
---local_epoch=1
---niid_diri=1
---diri_beta=1
---momentum=0.9
---phase_status=continue
---seed=1,2,3,4,5
-```
-
-For other figures and tables in the paper, the exact settings are provided in the corresponding shell scripts under `ROAR-Fed-github/scripts/`.
 
 ## Reproducibility statement
 
@@ -172,5 +142,5 @@ If you find this repository useful, please cite:
 
 ## Contact
 
-For questions regarding the code release, please open an issue in this repository.
+For questions regarding the code release, please contact the first author of the paper.
 
