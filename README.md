@@ -1,4 +1,3 @@
-下面这份可以直接**整段复制**到 GitHub 的 `README.md` 里：
 
 # ROAR-Fed
 
