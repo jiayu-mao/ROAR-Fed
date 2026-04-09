@@ -104,7 +104,7 @@ parser.add_argument('--set', type=int, default=1, help=r'=1 if concentrated devi
                     =2 if two clusters + unequal dataset')
 parser.add_argument('--phase_design', default='sca',
                     help='RIS phase design method')
-parser.add_argument('--phase_status', default='discrete',
+parser.add_argument('--phase_status', default='continue',
                     help='RIS phase is continuous or discrete')
 
 parser.add_argument('--seed', type=int, default=1, help='random seed')
