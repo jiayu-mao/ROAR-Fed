@@ -58,7 +58,7 @@ scripts/
 For example:
 
 ```bash
-bash scripts/run_baseline_cifar10.sh
+bash scripts/run_cifar10_baseline.sh
 ```
 
 ---
