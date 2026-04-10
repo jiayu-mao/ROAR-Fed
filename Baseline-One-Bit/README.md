@@ -132,6 +132,3 @@ To reproduce results:
 
 For questions, please contact the first author.
 
-```
-
----
