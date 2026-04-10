@@ -14,7 +14,7 @@ At present, the repository contains the following folder:
 
 * **`ROAR-Fed-github/`**: implementation of our proposed **ROAR-Fed** method.
 
-A second folder will be added later:
+A second folder contains one of the baselines:
 
 * **`Baseline-One-bit/`**: our reproduction of the following baseline method, used in our paper for comparison:
   **H. Li, R. Wang, W. Zhang, and J. Wu, "One Bit Aggregation for Federated Edge Learning With Reconfigurable Intelligent Surface: Analysis and Optimization," IEEE Transactions on Wireless Communications, 22(2), 872–888, 2023.**
