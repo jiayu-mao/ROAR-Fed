@@ -32,23 +32,6 @@ The public code in `ROAR-Fed-github/` contains the implementation of the main **
 
 Some components related to our personalized extension are **not included** in this public release, since they are associated with patent-related content and therefore cannot be disclosed at this time.
 
-## Repository structure
-
-```text
-ROAR-Fed/
-└── ROAR-Fed-github/
-    ├── models/
-    ├── scripts/
-    ├── trainer/
-    ├── utils/
-    ├── RIS.py
-    ├── environment.yml
-    ├── main.py
-    ├── sampling.py
-    ├── update.py
-    └── util.py
-```
-
 ## Environment setup
 
 The environment used for our experiments is provided in:
